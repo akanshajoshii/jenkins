@@ -18,6 +18,7 @@ pipeline {
                 sh'''
                 sudo yum install docker -y
                 sudo systemctl enable --now docker
+                sudo yum install tree -y
                 '''
             }
         }
