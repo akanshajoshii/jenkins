@@ -24,7 +24,7 @@ pipeline {
         stage('dockerbuild') {
             steps {
                 sh'''
-                sudo docker build -t jenkpush .
+                sudo docker build -t jenkipush .
                 '''
             }
         }
