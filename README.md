@@ -24,9 +24,7 @@ pipeline {
         stage('dockerbuild') {
             steps {
                 sh'''
-                sudo docker build -t jenkpush .
-                sudo docker tag jenkpush:latest 637423194833.dkr.ecr.us-west-2.amazonaws.com/jenkpush:latest
-                sudo docker push 637423194833.dkr.ecr.us-west-2.amazonaws.com/jenkpush:latest
+                sudo docker build -t jenkipush .t
                 '''
             }
         }
