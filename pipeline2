@@ -18,7 +18,6 @@ pipeline {
                 sh'''
                 sudo yum install docker -y
                 sudo systemctl enable --now docker
-                sudo yum install tree -y
                 '''
             }
         }
@@ -26,6 +25,7 @@ pipeline {
             steps {
                 sh'''
                 sudo docker build -t jenkipush .
+                sudo yum install tree -y
                 '''
             }
         }
